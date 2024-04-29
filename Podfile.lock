@@ -1,0 +1,26 @@
+PODS:
+  - SDWebImage (5.19.1):
+    - SDWebImage/Core (= 5.19.1)
+  - SDWebImage/Core (5.19.1)
+  - SnapKit (5.7.1)
+  - SwiftLint (0.54.0)
+
+DEPENDENCIES:
+  - SDWebImage
+  - SnapKit
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+    - SnapKit
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
+
+PODFILE CHECKSUM: 885915f1b7372cff29c46257315adf688e08842f
+
+COCOAPODS: 1.12.1

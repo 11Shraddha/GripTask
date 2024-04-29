@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FE2439C55BF9F48D4C28BCA /* Pods_GripTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3093B107F036CE93CFCEB7BB /* Pods_GripTaskTests.framework */; };
+		4138A8342BD6B884007E71C5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138A82F2BD6B884007E71C5 /* NetworkService.swift */; };
+		4138A8352BD6B884007E71C5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138A8302BD6B884007E71C5 /* Endpoint.swift */; };
+		4138A8402BD6BA9C007E71C5 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138A83F2BD6BA9C007E71C5 /* PokemonModel.swift */; };
+		4138A8472BD6BB03007E71C5 /* GetPokemonsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138A8462BD6BB03007E71C5 /* GetPokemonsUseCase.swift */; };
+		4138A84D2BD6BCAF007E71C5 /* PokemonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138A84C2BD6BCAE007E71C5 /* PokemonListViewController.swift */; };
+		4138A84F2BD6BCCC007E71C5 /* PokemonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138A84E2BD6BCCC007E71C5 /* PokemonListViewModel.swift */; };
+		4138A8532BD6BD47007E71C5 /* PokemonListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138A8522BD6BD47007E71C5 /* PokemonListItemCell.swift */; };
+		4138A8592BD6E5DA007E71C5 /* PokemonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138A8582BD6E5DA007E71C5 /* PokemonDataSource.swift */; };
+		4138A85B2BD81B7F007E71C5 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138A85A2BD81B7F007E71C5 /* ErrorResponse.swift */; };
+		4138A85E2BD8BE3F007E71C5 /* GetPokemonDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138A85D2BD8BE3F007E71C5 /* GetPokemonDetailUseCase.swift */; };
+		4138A8602BD8C075007E71C5 /* PokemonDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138A85F2BD8C075007E71C5 /* PokemonDetailDataSource.swift */; };
+		415DF4BD2BD8D847007C66EB /* PokemonDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DF4BC2BD8D847007C66EB /* PokemonDetailModel.swift */; };
+		415DF4C02BD91FCD007C66EB /* PokemonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DF4BF2BD91FCD007C66EB /* PokemonDetailViewModel.swift */; };
+		415DF4C22BD920B2007C66EB /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DF4C12BD920B2007C66EB /* PokemonDetailViewController.swift */; };
+		415DF4C62BD98121007C66EB /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DF4C52BD98121007C66EB /* NetworkServiceTests.swift */; };
+		415DF4C92BD98175007C66EB /* PokemonListResponseMock.json in Sources */ = {isa = PBXBuildFile; fileRef = 415DF4C82BD98175007C66EB /* PokemonListResponseMock.json */; };
+		415DF4CB2BD981CC007C66EB /* PokemonDetailResponseMock.json in Sources */ = {isa = PBXBuildFile; fileRef = 415DF4CA2BD981CC007C66EB /* PokemonDetailResponseMock.json */; };
+		415DF4CD2BD9821D007C66EB /* ErrorResponseMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 415DF4CC2BD9821D007C66EB /* ErrorResponseMock.json */; };
+		415DF4CE2BD98EC9007C66EB /* PokemonListResponseMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 415DF4C82BD98175007C66EB /* PokemonListResponseMock.json */; };
+		415DF4CF2BD98EC9007C66EB /* PokemonDetailResponseMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 415DF4CA2BD981CC007C66EB /* PokemonDetailResponseMock.json */; };
+		415DF4D12BD99008007C66EB /* PokemonDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DF4D02BD99008007C66EB /* PokemonDataSourceTests.swift */; };
+		415DF4D32BD995C9007C66EB /* PokemonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DF4D22BD995C9007C66EB /* PokemonViewModelTests.swift */; };
+		415DF4D52BD9FEA2007C66EB /* EmptyPokemonListResponseMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 415DF4D42BD9FE92007C66EB /* EmptyPokemonListResponseMock.json */; };
+		415DF4D82BDCA179007C66EB /* PokemonDetailDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DF4D72BDCA179007C66EB /* PokemonDetailDataSourceTests.swift */; };
+		415DF4DA2BDCA650007C66EB /* PokemonDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415DF4D92BDCA650007C66EB /* PokemonDetailViewModelTests.swift */; };
+		41ABE9342BD1B1F80058907D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ABE9332BD1B1F80058907D /* AppDelegate.swift */; };
+		41ABE9362BD1B1F80058907D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ABE9352BD1B1F80058907D /* SceneDelegate.swift */; };
+		41ABE93D2BD1B1FA0058907D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41ABE93C2BD1B1FA0058907D /* Assets.xcassets */; };
+		41ABE9402BD1B1FA0058907D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41ABE93E2BD1B1FA0058907D /* LaunchScreen.storyboard */; };
+		41ABE94B2BD1B1FA0058907D /* GripTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ABE94A2BD1B1FA0058907D /* GripTaskTests.swift */; };
+		41ABE9552BD1B1FA0058907D /* GripTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ABE9542BD1B1FA0058907D /* GripTaskUITests.swift */; };
+		41ABE9572BD1B1FA0058907D /* GripTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ABE9562BD1B1FA0058907D /* GripTaskUITestsLaunchTests.swift */; };
+		41ABE9642BD1B3620058907D /* References.tutorial in Resources */ = {isa = PBXBuildFile; fileRef = 41ABE9632BD1B3620058907D /* References.tutorial */; };
+		6BA8ED67192D4EB09B4DA783 /* Pods_GripTask_GripTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73ED5E97F4BA8AD2AFB04CB /* Pods_GripTask_GripTaskUITests.framework */; };
+		A06903D9C47FDCD1DF125CA6 /* Pods_GripTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DDE2F1C95EF4EC60C84B442 /* Pods_GripTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41ABE9472BD1B1FA0058907D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41ABE9282BD1B1F70058907D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41ABE92F2BD1B1F70058907D;
+			remoteInfo = GripTask;
+		};
+		41ABE9512BD1B1FA0058907D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41ABE9282BD1B1F70058907D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41ABE92F2BD1B1F70058907D;
+			remoteInfo = GripTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3093B107F036CE93CFCEB7BB /* Pods_GripTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GripTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4138A82F2BD6B884007E71C5 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4138A8302BD6B884007E71C5 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		4138A83F2BD6BA9C007E71C5 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		4138A8462BD6BB03007E71C5 /* GetPokemonsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPokemonsUseCase.swift; sourceTree = "<group>"; };
+		4138A84C2BD6BCAE007E71C5 /* PokemonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewController.swift; sourceTree = "<group>"; };
+		4138A84E2BD6BCCC007E71C5 /* PokemonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewModel.swift; sourceTree = "<group>"; };
+		4138A8522BD6BD47007E71C5 /* PokemonListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListItemCell.swift; sourceTree = "<group>"; };
+		4138A8582BD6E5DA007E71C5 /* PokemonDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDataSource.swift; sourceTree = "<group>"; };
+		4138A85A2BD81B7F007E71C5 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		4138A85D2BD8BE3F007E71C5 /* GetPokemonDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPokemonDetailUseCase.swift; sourceTree = "<group>"; };
+		4138A85F2BD8C075007E71C5 /* PokemonDetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailDataSource.swift; sourceTree = "<group>"; };
+		415DF4BC2BD8D847007C66EB /* PokemonDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailModel.swift; sourceTree = "<group>"; };
+		415DF4BF2BD91FCD007C66EB /* PokemonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewModel.swift; sourceTree = "<group>"; };
+		415DF4C12BD920B2007C66EB /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
+		415DF4C52BD98121007C66EB /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		415DF4C82BD98175007C66EB /* PokemonListResponseMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PokemonListResponseMock.json; sourceTree = "<group>"; };
+		415DF4CA2BD981CC007C66EB /* PokemonDetailResponseMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PokemonDetailResponseMock.json; sourceTree = "<group>"; };
+		415DF4CC2BD9821D007C66EB /* ErrorResponseMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ErrorResponseMock.json; sourceTree = "<group>"; };
+		415DF4D02BD99008007C66EB /* PokemonDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDataSourceTests.swift; sourceTree = "<group>"; };
+		415DF4D22BD995C9007C66EB /* PokemonViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModelTests.swift; sourceTree = "<group>"; };
+		415DF4D42BD9FE92007C66EB /* EmptyPokemonListResponseMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EmptyPokemonListResponseMock.json; sourceTree = "<group>"; };
+		415DF4D72BDCA179007C66EB /* PokemonDetailDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailDataSourceTests.swift; sourceTree = "<group>"; };
+		415DF4D92BDCA650007C66EB /* PokemonDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewModelTests.swift; sourceTree = "<group>"; };
+		41ABE9302BD1B1F80058907D /* GripTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GripTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41ABE9332BD1B1F80058907D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41ABE9352BD1B1F80058907D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41ABE93C2BD1B1FA0058907D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41ABE93F2BD1B1FA0058907D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41ABE9412BD1B1FA0058907D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41ABE9462BD1B1FA0058907D /* GripTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GripTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41ABE94A2BD1B1FA0058907D /* GripTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GripTaskTests.swift; sourceTree = "<group>"; };
+		41ABE9502BD1B1FA0058907D /* GripTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GripTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41ABE9542BD1B1FA0058907D /* GripTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GripTaskUITests.swift; sourceTree = "<group>"; };
+		41ABE9562BD1B1FA0058907D /* GripTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GripTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		41ABE9632BD1B3620058907D /* References.tutorial */ = {isa = PBXFileReference; lastKnownFileType = text; path = References.tutorial; sourceTree = "<group>"; };
+		519E91633C826CBC05BCE3BE /* Pods-GripTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GripTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-GripTaskTests/Pods-GripTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6CD503DF4C205DE1A8B1A026 /* Pods-GripTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GripTask.debug.xcconfig"; path = "Target Support Files/Pods-GripTask/Pods-GripTask.debug.xcconfig"; sourceTree = "<group>"; };
+		6DDE2F1C95EF4EC60C84B442 /* Pods_GripTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GripTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		886F3BEA1B162C6D5089481E /* Pods-GripTask-GripTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GripTask-GripTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-GripTask-GripTaskUITests/Pods-GripTask-GripTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB6D18C023858230891E2E5E /* Pods-GripTask-GripTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GripTask-GripTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-GripTask-GripTaskUITests/Pods-GripTask-GripTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D73ED5E97F4BA8AD2AFB04CB /* Pods_GripTask_GripTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GripTask_GripTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9B6CFBF514E971BDDC2E611 /* Pods-GripTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GripTask.release.xcconfig"; path = "Target Support Files/Pods-GripTask/Pods-GripTask.release.xcconfig"; sourceTree = "<group>"; };
+		FC9973E44186FACA21947E68 /* Pods-GripTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GripTaskTests.release.xcconfig"; path = "Target Support Files/Pods-GripTaskTests/Pods-GripTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41ABE92D2BD1B1F70058907D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06903D9C47FDCD1DF125CA6 /* Pods_GripTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41ABE9432BD1B1FA0058907D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FE2439C55BF9F48D4C28BCA /* Pods_GripTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41ABE94D2BD1B1FA0058907D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA8ED67192D4EB09B4DA783 /* Pods_GripTask_GripTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4138A82B2BD6B884007E71C5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4138A82F2BD6B884007E71C5 /* NetworkService.swift */,
+				4138A8302BD6B884007E71C5 /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4138A8362BD6B8E9007E71C5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				41ABE9352BD1B1F80058907D /* SceneDelegate.swift */,
+				41ABE9332BD1B1F80058907D /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4138A8372BD6B953007E71C5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4138A8572BD6E5C1007E71C5 /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4138A83D2BD6BA04007E71C5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4138A8452BD6BAE5007E71C5 /* UseCases */,
+				4138A83E2BD6BA28007E71C5 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4138A83E2BD6BA28007E71C5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4138A83F2BD6BA9C007E71C5 /* PokemonModel.swift */,
+				4138A85A2BD81B7F007E71C5 /* ErrorResponse.swift */,
+				415DF4BC2BD8D847007C66EB /* PokemonDetailModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		4138A8452BD6BAE5007E71C5 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				4138A8462BD6BB03007E71C5 /* GetPokemonsUseCase.swift */,
+				4138A85D2BD8BE3F007E71C5 /* GetPokemonDetailUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		4138A8482BD6BC4E007E71C5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				415DF4BE2BD91FB5007C66EB /* PokemonDetail */,
+				4138A8492BD6BC7A007E71C5 /* PokemonList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4138A8492BD6BC7A007E71C5 /* PokemonList */ = {
+			isa = PBXGroup;
+			children = (
+				4138A84B2BD6BC8F007E71C5 /* ViewModel */,
+				4138A84A2BD6BC8A007E71C5 /* View */,
+			);
+			path = PokemonList;
+			sourceTree = "<group>";
+		};
+		4138A84A2BD6BC8A007E71C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4138A84C2BD6BCAE007E71C5 /* PokemonListViewController.swift */,
+				4138A8522BD6BD47007E71C5 /* PokemonListItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4138A84B2BD6BC8F007E71C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4138A84E2BD6BCCC007E71C5 /* PokemonListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4138A8572BD6E5C1007E71C5 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4138A8582BD6E5DA007E71C5 /* PokemonDataSource.swift */,
+				4138A85F2BD8C075007E71C5 /* PokemonDetailDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		415DF4BE2BD91FB5007C66EB /* PokemonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				415DF4BF2BD91FCD007C66EB /* PokemonDetailViewModel.swift */,
+				415DF4C12BD920B2007C66EB /* PokemonDetailViewController.swift */,
+			);
+			path = PokemonDetail;
+			sourceTree = "<group>";
+		};
+		415DF4C32BD980FC007C66EB /* PokemonList */ = {
+			isa = PBXGroup;
+			children = (
+				415DF4D42BD9FE92007C66EB /* EmptyPokemonListResponseMock.json */,
+				415DF4C82BD98175007C66EB /* PokemonListResponseMock.json */,
+				415DF4D02BD99008007C66EB /* PokemonDataSourceTests.swift */,
+				415DF4D22BD995C9007C66EB /* PokemonViewModelTests.swift */,
+			);
+			path = PokemonList;
+			sourceTree = "<group>";
+		};
+		415DF4C42BD9810B007C66EB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				415DF4CC2BD9821D007C66EB /* ErrorResponseMock.json */,
+				415DF4C52BD98121007C66EB /* NetworkServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		415DF4D62BDCA157007C66EB /* PokemonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				415DF4CA2BD981CC007C66EB /* PokemonDetailResponseMock.json */,
+				415DF4D72BDCA179007C66EB /* PokemonDetailDataSourceTests.swift */,
+				415DF4D92BDCA650007C66EB /* PokemonDetailViewModelTests.swift */,
+			);
+			path = PokemonDetail;
+			sourceTree = "<group>";
+		};
+		41ABE9272BD1B1F70058907D = {
+			isa = PBXGroup;
+			children = (
+				41ABE9322BD1B1F80058907D /* GripTask */,
+				41ABE9492BD1B1FA0058907D /* GripTaskTests */,
+				41ABE9532BD1B1FA0058907D /* GripTaskUITests */,
+				41ABE9312BD1B1F80058907D /* Products */,
+				65F2D8FDA463C31C35DBC9CB /* Pods */,
+				84634286186F3C39577928FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		41ABE9312BD1B1F80058907D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41ABE9302BD1B1F80058907D /* GripTask.app */,
+				41ABE9462BD1B1FA0058907D /* GripTaskTests.xctest */,
+				41ABE9502BD1B1FA0058907D /* GripTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41ABE9322BD1B1F80058907D /* GripTask */ = {
+			isa = PBXGroup;
+			children = (
+				4138A8482BD6BC4E007E71C5 /* Presentation */,
+				4138A83D2BD6BA04007E71C5 /* Domain */,
+				4138A8372BD6B953007E71C5 /* Data */,
+				4138A8362BD6B8E9007E71C5 /* Application */,
+				4138A82B2BD6B884007E71C5 /* Network */,
+				41ABE93C2BD1B1FA0058907D /* Assets.xcassets */,
+				41ABE93E2BD1B1FA0058907D /* LaunchScreen.storyboard */,
+				41ABE9412BD1B1FA0058907D /* Info.plist */,
+				41ABE9632BD1B3620058907D /* References.tutorial */,
+			);
+			path = GripTask;
+			sourceTree = "<group>";
+		};
+		41ABE9492BD1B1FA0058907D /* GripTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				415DF4D62BDCA157007C66EB /* PokemonDetail */,
+				415DF4C42BD9810B007C66EB /* Network */,
+				415DF4C32BD980FC007C66EB /* PokemonList */,
+				41ABE94A2BD1B1FA0058907D /* GripTaskTests.swift */,
+			);
+			path = GripTaskTests;
+			sourceTree = "<group>";
+		};
+		41ABE9532BD1B1FA0058907D /* GripTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41ABE9542BD1B1FA0058907D /* GripTaskUITests.swift */,
+				41ABE9562BD1B1FA0058907D /* GripTaskUITestsLaunchTests.swift */,
+			);
+			path = GripTaskUITests;
+			sourceTree = "<group>";
+		};
+		65F2D8FDA463C31C35DBC9CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CD503DF4C205DE1A8B1A026 /* Pods-GripTask.debug.xcconfig */,
+				D9B6CFBF514E971BDDC2E611 /* Pods-GripTask.release.xcconfig */,
+				886F3BEA1B162C6D5089481E /* Pods-GripTask-GripTaskUITests.debug.xcconfig */,
+				CB6D18C023858230891E2E5E /* Pods-GripTask-GripTaskUITests.release.xcconfig */,
+				519E91633C826CBC05BCE3BE /* Pods-GripTaskTests.debug.xcconfig */,
+				FC9973E44186FACA21947E68 /* Pods-GripTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84634286186F3C39577928FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DDE2F1C95EF4EC60C84B442 /* Pods_GripTask.framework */,
+				D73ED5E97F4BA8AD2AFB04CB /* Pods_GripTask_GripTaskUITests.framework */,
+				3093B107F036CE93CFCEB7BB /* Pods_GripTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41ABE92F2BD1B1F70058907D /* GripTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41ABE95A2BD1B1FA0058907D /* Build configuration list for PBXNativeTarget "GripTask" */;
+			buildPhases = (
+				26753FE7D5F4AEE252FAD1EA /* [CP] Check Pods Manifest.lock */,
+				41ABE92C2BD1B1F70058907D /* Sources */,
+				41ABE92D2BD1B1F70058907D /* Frameworks */,
+				41ABE92E2BD1B1F70058907D /* Resources */,
+				20ED24689A4CE0F8E50F3254 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GripTask;
+			productName = GripTask;
+			productReference = 41ABE9302BD1B1F80058907D /* GripTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41ABE9452BD1B1FA0058907D /* GripTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41ABE95D2BD1B1FA0058907D /* Build configuration list for PBXNativeTarget "GripTaskTests" */;
+			buildPhases = (
+				B6CA8D374F8A99A90639BEEE /* [CP] Check Pods Manifest.lock */,
+				41ABE9422BD1B1FA0058907D /* Sources */,
+				41ABE9432BD1B1FA0058907D /* Frameworks */,
+				41ABE9442BD1B1FA0058907D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41ABE9482BD1B1FA0058907D /* PBXTargetDependency */,
+			);
+			name = GripTaskTests;
+			productName = GripTaskTests;
+			productReference = 41ABE9462BD1B1FA0058907D /* GripTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41ABE94F2BD1B1FA0058907D /* GripTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41ABE9602BD1B1FA0058907D /* Build configuration list for PBXNativeTarget "GripTaskUITests" */;
+			buildPhases = (
+				AE31A4D0D8D97F0E2FEB9FB5 /* [CP] Check Pods Manifest.lock */,
+				41ABE94C2BD1B1FA0058907D /* Sources */,
+				41ABE94D2BD1B1FA0058907D /* Frameworks */,
+				41ABE94E2BD1B1FA0058907D /* Resources */,
+				97F1C1BA4B603613AF0D32B9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41ABE9522BD1B1FA0058907D /* PBXTargetDependency */,
+			);
+			name = GripTaskUITests;
+			productName = GripTaskUITests;
+			productReference = 41ABE9502BD1B1FA0058907D /* GripTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41ABE9282BD1B1F70058907D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					41ABE92F2BD1B1F70058907D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					41ABE9452BD1B1FA0058907D = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 41ABE92F2BD1B1F70058907D;
+					};
+					41ABE94F2BD1B1FA0058907D = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 41ABE92F2BD1B1F70058907D;
+					};
+				};
+			};
+			buildConfigurationList = 41ABE92B2BD1B1F70058907D /* Build configuration list for PBXProject "GripTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41ABE9272BD1B1F70058907D;
+			packageReferences = (
+			);
+			productRefGroup = 41ABE9312BD1B1F80058907D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41ABE92F2BD1B1F70058907D /* GripTask */,
+				41ABE9452BD1B1FA0058907D /* GripTaskTests */,
+				41ABE94F2BD1B1FA0058907D /* GripTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41ABE92E2BD1B1F70058907D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41ABE9402BD1B1FA0058907D /* LaunchScreen.storyboard in Resources */,
+				41ABE93D2BD1B1FA0058907D /* Assets.xcassets in Resources */,
+				41ABE9642BD1B3620058907D /* References.tutorial in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41ABE9442BD1B1FA0058907D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415DF4CE2BD98EC9007C66EB /* PokemonListResponseMock.json in Resources */,
+				415DF4CF2BD98EC9007C66EB /* PokemonDetailResponseMock.json in Resources */,
+				415DF4D52BD9FEA2007C66EB /* EmptyPokemonListResponseMock.json in Resources */,
+				415DF4CD2BD9821D007C66EB /* ErrorResponseMock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41ABE94E2BD1B1FA0058907D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20ED24689A4CE0F8E50F3254 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GripTask/Pods-GripTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GripTask/Pods-GripTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GripTask/Pods-GripTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26753FE7D5F4AEE252FAD1EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GripTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97F1C1BA4B603613AF0D32B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GripTask-GripTaskUITests/Pods-GripTask-GripTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GripTask-GripTaskUITests/Pods-GripTask-GripTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GripTask-GripTaskUITests/Pods-GripTask-GripTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE31A4D0D8D97F0E2FEB9FB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GripTask-GripTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6CA8D374F8A99A90639BEEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GripTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41ABE92C2BD1B1F70058907D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4138A8592BD6E5DA007E71C5 /* PokemonDataSource.swift in Sources */,
+				41ABE9342BD1B1F80058907D /* AppDelegate.swift in Sources */,
+				4138A8352BD6B884007E71C5 /* Endpoint.swift in Sources */,
+				4138A85E2BD8BE3F007E71C5 /* GetPokemonDetailUseCase.swift in Sources */,
+				4138A8402BD6BA9C007E71C5 /* PokemonModel.swift in Sources */,
+				41ABE9362BD1B1F80058907D /* SceneDelegate.swift in Sources */,
+				4138A8532BD6BD47007E71C5 /* PokemonListItemCell.swift in Sources */,
+				4138A8472BD6BB03007E71C5 /* GetPokemonsUseCase.swift in Sources */,
+				4138A84D2BD6BCAF007E71C5 /* PokemonListViewController.swift in Sources */,
+				4138A8342BD6B884007E71C5 /* NetworkService.swift in Sources */,
+				4138A8602BD8C075007E71C5 /* PokemonDetailDataSource.swift in Sources */,
+				4138A85B2BD81B7F007E71C5 /* ErrorResponse.swift in Sources */,
+				4138A84F2BD6BCCC007E71C5 /* PokemonListViewModel.swift in Sources */,
+				415DF4C22BD920B2007C66EB /* PokemonDetailViewController.swift in Sources */,
+				415DF4BD2BD8D847007C66EB /* PokemonDetailModel.swift in Sources */,
+				415DF4C02BD91FCD007C66EB /* PokemonDetailViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41ABE9422BD1B1FA0058907D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415DF4D32BD995C9007C66EB /* PokemonViewModelTests.swift in Sources */,
+				415DF4C62BD98121007C66EB /* NetworkServiceTests.swift in Sources */,
+				41ABE94B2BD1B1FA0058907D /* GripTaskTests.swift in Sources */,
+				415DF4C92BD98175007C66EB /* PokemonListResponseMock.json in Sources */,
+				415DF4D82BDCA179007C66EB /* PokemonDetailDataSourceTests.swift in Sources */,
+				415DF4DA2BDCA650007C66EB /* PokemonDetailViewModelTests.swift in Sources */,
+				415DF4CB2BD981CC007C66EB /* PokemonDetailResponseMock.json in Sources */,
+				415DF4D12BD99008007C66EB /* PokemonDataSourceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41ABE94C2BD1B1FA0058907D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41ABE9572BD1B1FA0058907D /* GripTaskUITestsLaunchTests.swift in Sources */,
+				41ABE9552BD1B1FA0058907D /* GripTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41ABE9482BD1B1FA0058907D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41ABE92F2BD1B1F70058907D /* GripTask */;
+			targetProxy = 41ABE9472BD1B1FA0058907D /* PBXContainerItemProxy */;
+		};
+		41ABE9522BD1B1FA0058907D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41ABE92F2BD1B1F70058907D /* GripTask */;
+			targetProxy = 41ABE9512BD1B1FA0058907D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41ABE93E2BD1B1FA0058907D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41ABE93F2BD1B1FA0058907D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41ABE9582BD1B1FA0058907D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41ABE9592BD1B1FA0058907D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41ABE95B2BD1B1FA0058907D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD503DF4C205DE1A8B1A026 /* Pods-GripTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GripTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SS.GripTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41ABE95C2BD1B1FA0058907D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9B6CFBF514E971BDDC2E611 /* Pods-GripTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GripTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SS.GripTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41ABE95E2BD1B1FA0058907D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 519E91633C826CBC05BCE3BE /* Pods-GripTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SS.GripTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GripTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GripTask";
+			};
+			name = Debug;
+		};
+		41ABE95F2BD1B1FA0058907D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9973E44186FACA21947E68 /* Pods-GripTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SS.GripTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GripTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GripTask";
+			};
+			name = Release;
+		};
+		41ABE9612BD1B1FA0058907D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 886F3BEA1B162C6D5089481E /* Pods-GripTask-GripTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SS.GripTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GripTask;
+			};
+			name = Debug;
+		};
+		41ABE9622BD1B1FA0058907D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB6D18C023858230891E2E5E /* Pods-GripTask-GripTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SS.GripTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GripTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41ABE92B2BD1B1F70058907D /* Build configuration list for PBXProject "GripTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41ABE9582BD1B1FA0058907D /* Debug */,
+				41ABE9592BD1B1FA0058907D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41ABE95A2BD1B1FA0058907D /* Build configuration list for PBXNativeTarget "GripTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41ABE95B2BD1B1FA0058907D /* Debug */,
+				41ABE95C2BD1B1FA0058907D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41ABE95D2BD1B1FA0058907D /* Build configuration list for PBXNativeTarget "GripTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41ABE95E2BD1B1FA0058907D /* Debug */,
+				41ABE95F2BD1B1FA0058907D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41ABE9602BD1B1FA0058907D /* Build configuration list for PBXNativeTarget "GripTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41ABE9612BD1B1FA0058907D /* Debug */,
+				41ABE9622BD1B1FA0058907D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41ABE9282BD1B1F70058907D /* Project object */;
+}
